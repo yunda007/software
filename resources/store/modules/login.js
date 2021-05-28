@@ -1,7 +1,5 @@
 import axios from 'axios';
 
-
-
 const state = {
     user: {},    
     permissions: {},
@@ -14,6 +12,8 @@ const state = {
 const getters = {};
 const actions = {
     loginUsr({ commit }, user) {
+        alert("login")
+
         commit("SET_ERRORS", []);
         commit("SET_MESSAGE", "");
         axios

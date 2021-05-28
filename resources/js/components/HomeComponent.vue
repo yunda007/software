@@ -10,6 +10,7 @@
                     <v-list-item-title>Dashboard</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
+
             <v-list-group :prepend-icon="model ? 'mdi-chevron-up' : 'mdi-chevron-down'" append-icon="" color="#15638A">
                 <template v-slot:activator>
                     <v-list-item-content>
@@ -28,16 +29,19 @@
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item link color="#15638A">
+                <v-list-item to="/products" link color="#15638A">
                     <v-list-item-action>
-                        <v-icon>mdi-account-key</v-icon>
+                        <v-icon>
+                            mdi-dialpad
+                        </v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>
-                            Roles
+                            Productos
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+              
             </v-list-group>
             <v-list-item link>
                 <v-list-item-action>
