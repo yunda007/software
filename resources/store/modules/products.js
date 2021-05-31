@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 const state = {
     products: [],
     message: '',
@@ -19,12 +18,11 @@ const actions = {
         
     },
     async saveProducts({commit}, products){        
-        const response = await axios.post("/user/store",
+        const response = await axios.post("/products/crear",
         {
             nombre: products.nombre,
             img:products.img,
             precio:products.precio,
-            cantidad:products.cantidad
         })
         commit('SET_DATA',response.data.products)
         
@@ -32,12 +30,10 @@ const actions = {
 
     async updateProducts({commit}, products){        
         console.log(products)
-        const response = await axios.put("/products/update",
+        const response = await axios.put("/products/modificar",
         {
             nombre: products.nombre,
             img: products.img,
-            precio: products.precio,
-            cantidad: products.cantidad,
             id: products.id
         })
         commit('SET_DATA',response.data.products)
@@ -54,9 +50,6 @@ const mutations = {
     },
     SET_DATA(state, data){
         state.products = data;
-    },
-    SET_CURRENTUSER(state, data){
-        state.currenteProducts = data;
     },
     SET_MESSAGE(state, data){
         state.message = data;
