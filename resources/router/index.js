@@ -4,19 +4,19 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 import users from '../js/components/user/ContainerComponent'
-import products from '../js/components/product/ContainerComponent'
+import productos from '../js/components/productos/ContainerComponent'
 
 const routes=[
     {
         component:users,
         name:"users",
-        path:"/users"
+        path:"/users", 
     },
     {
-        component:products,
-        name:"products",
-        path:"/products"
-    },
+        component:productos,
+        name:"productos",
+        path:"/productos"
+    }
 ]
 
 export default new VueRouter ({

@@ -7,7 +7,7 @@
                     <v-icon>mdi-home</v-icon>
                 </v-list-item-action>
                 <v-list-item-content>
-                    <v-list-item-title>Dashboard</v-list-item-title>
+                   <v-list-item-title>Dashboard</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
 
@@ -29,11 +29,9 @@
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-                <v-list-item to="/products" link color="#15638A">
+                <v-list-item to="/productos" link color="#15638A">
                     <v-list-item-action>
-                        <v-icon>
-                            mdi-dialpad
-                        </v-icon>
+                        <v-icon>mdi-domain</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
                         <v-list-item-title>
@@ -41,8 +39,18 @@
                         </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-              
+                <v-list-item link color="#15638A">
+                    <v-list-item-action>
+                        <v-icon>mdi-account-key</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>
+                            Roles
+                        </v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list-group>
+            
             <v-list-item link>
                 <v-list-item-action>
                     <v-icon>mdi-power</v-icon>

@@ -28,9 +28,6 @@
                             <v-btn @click="openModal('update', item)">
                                 <v-icon @click="openModal('update', item)" color="green">mdi-pencil-outline</v-icon>
                             </v-btn>
-                            <v-btn>
-                                <v-icon color="red">mdi-delete-sweep-outline</v-icon>
-                            </v-btn>
                         </td>
                         <td>{{ item.name }}</td>
                         <td>{{ item.email }}</td>
@@ -142,7 +139,7 @@ export default {
         ...mapState('users', ['listUsers', 'message', 'dataResponse'])
     },
 
-    mounted() {
+    beforeMount() {
         //esto para cuando se monte el componente
         this.$store.dispatch('users/getUsers');
     },
